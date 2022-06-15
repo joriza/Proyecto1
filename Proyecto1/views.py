@@ -2,7 +2,7 @@ from django.http import HttpResponse
 import datetime
 from django.template import Template, Context
 
-def saludo(request):   #Nuestra primera vista :) 
+def saludo(request):   #Nuestra primera vista :)
 	return HttpResponse("Hola Django - Coder")
 
 
@@ -29,9 +29,9 @@ def miNombreEs(self, nombre):
 
 def probandoTemplate(self):
 
-    miHtml = open("C:/Users/nico_/Desktop/PythonProtecto1/Proyecto1/Proyecto1/plantillas/template1.html")
+    miHtml = open("/home/jorge/Desarrollo/Coder/Django/Proyecto1/Proyecto1/plantillas/template1.html")
 
-    plantilla = Template(miHtml.read()) #Se carga en memoria nuestro documento, template1   
+    plantilla = Template(miHtml.read()) #Se carga en memoria nuestro documento, template1
     ##OJO importar template y contex, con: from django.template import Template, Context
 
     miHtml.close() #Cerramos el archivo
